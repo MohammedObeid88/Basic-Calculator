@@ -1,0 +1,48 @@
+#outline {
+    margin: auto;
+    border: 3px solid;
+    background-color: rgb(194, 194, 194);
+    height: 640px;
+    width: 600px;
+    padding: 5px;
+}
+
+#textfield {
+    margin: auto;
+    width: 590px;
+    height: 100px;
+    text-align: right;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#buttons-div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.button {
+    height: 100px;
+    width: 115px;
+    margin-top: 5px;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.symbol {
+    background-color: bisque;
+}
+
+.digit {
+    background-color: beige;
+}
+
+.equal {
+    grid-row: span 2;
+    height: 205px;
+}
+
+.zero {
+    grid-column: span 2;
+    width: 235px;
+}
