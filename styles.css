@@ -2,7 +2,6 @@
     margin: auto;
     border: 3px solid;
     background-color: rgb(194, 194, 194);
-    height: 640px;
     width: 600px;
     padding: 5px;
 }
@@ -16,12 +15,38 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-#buttons-div {
+#upper-div {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#lower-div {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
-.button {
+.mini {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 228, 196, 0.411);
+}
+
+.mini:hover {
+    background-color: rgba(255, 228, 196, 0.185);
+}
+
+.sd {
+    font-size: 11px;
+}
+
+.optn {
+    font-size: 14px;
+}
+
+.digit, .symbol {
     height: 100px;
     width: 115px;
     margin-top: 5px;
@@ -33,8 +58,16 @@
     background-color: bisque;
 }
 
+.symbol:hover {
+    background-color: rgba(255, 228, 196, 0.688);
+}
+
 .digit {
     background-color: beige;
+}
+
+.digit:hover {
+    background-color: rgba(245, 245, 220, 0.725);
 }
 
 .equal {
@@ -45,4 +78,18 @@
 .zero {
     grid-column: span 2;
     width: 235px;
+}
+
+#color-box {
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    border-style: dashed;
+    font-size: medium;
+    background-color: white;
+    position: absolute;
+    transform: translate(75%, -200%);
+    padding: 10px;
 }

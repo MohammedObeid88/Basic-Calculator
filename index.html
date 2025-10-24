@@ -8,8 +8,30 @@
     <body>
         <div id="outline">
             <input id="textfield" type="text">
-            <div id="buttons-div">
-                <button class="button symbol"><=</button>
+            <div id="upper-div">
+                <button class="button mini">x<sup>2</sup></button>
+                <button class="button mini">sin</button>
+                <button class="button mini">cos</button>
+                <button class="button mini">tan</button>
+                <button class="button mini">log</button>
+                <button class="button mini">x<sup>exp</sup></button>
+                <button class="button mini">(</button>
+                <button class="button mini">)</button>
+                <button class="button mini">,</button>
+                <button class="button mini">ln</button>
+                <button class="button mini">nCr</button>
+                <button class="button mini">nPr</button>
+                <button class="button mini">&pi;</button>
+                <button class="button mini">&#x222b;</button>
+                <button class="button mini"><sup>a</sup>&frasl;<sub>b</sub></button>
+                <button class="button mini sd">S<=>D</button>
+                <button class="button mini">x<sup>-1</sup></button>
+                <button class="button mini optn">OPTN</button>
+                <button class="button mini">ON</button>
+                <button class="button mini">OFF</button>
+            </div>
+            <div id="lower-div">
+                <button class="button symbol">DEL</button>
                 <button class="button symbol">CE</button>
                 <button class="button symbol">C</button>
                 <button class="button symbol">+-</button>
@@ -33,6 +55,19 @@
                 <button class="button symbol">.</button>
                 <button class="button symbol">+</button>
             </div>
+        </div>
+        <div id="color-box">
+            <h1>Options</h1>
+            <label for="outline-color">Choose Outline Color<br></label>
+            <input id="outline-color" type="color" title="Choose Outline Color">
+            <label for="digit-color"><br>Choose Digit Buttons Color<br></label>
+            <input id="digit-color" type="color" title="Choose Digit Buttons Color">
+            <label for="symbol-color"><br>Choose Symbol Buttons Color<br></label>
+            <input id="symbol-color" type="color" title="Choose Symbol Buttons Color">
+            <label for="mini-color"><br>Choose Mini Buttons Color<br></label>
+            <input id="mini-color" type="color" title="Choose Mini Buttons Color">
+            <br>
+            <button id="exit">Exit</button>
         </div>
         <script src="script.js"></script>
     </body>
