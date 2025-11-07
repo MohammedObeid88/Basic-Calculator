@@ -35,7 +35,7 @@ buttons.forEach(button => {
             case "nPr": output.value += "P("; break;
             case "x-1": output.value = Math.pow(output.value, -1); break;
             case "OPTN":
-                options.style.display = flexbox;
+                options.style.display = (options.style.display === "block") ? "none" : "block";
                 break;
             case "DEL": output.value = output.value.slice(0, -1); break;
             case "CE": case "C": output.value = ""; break;
@@ -52,10 +52,14 @@ buttons.forEach(button => {
     });
 });
 
-exit.addEventListener("click", () => {
-    if (options.style.display === flexbox) {
-        options.style.display = none;
-    } else {
-        options.style.display = flexbox;
-    }
+const color_btns = document.querySelectorAll(".color-btn");
+
+color_btns.forEach(color_btn => {
+    color_btn.addEventListener("input", () => {
+        const targetClass = color_btn.id.replace("-color", "");
+        const targetElements = document.querySelectorAll("." + targetClass);
+        targetElements.forEach(el => {
+            el.style.backgroundColor = color_btn.value;
+        });
+    });
 });

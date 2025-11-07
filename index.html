@@ -6,7 +6,7 @@
     </head>
 
     <body>
-        <div id="outline">
+        <div class="outline">
             <input id="textfield" type="text">
             <div id="upper-div">
                 <button class="button mini">x<sup>2</sup></button>
@@ -56,18 +56,16 @@
                 <button class="button symbol">+</button>
             </div>
         </div>
-        <div id="color-box">
-            <h1>Options</h1>
+        <div id="color-box" style="display: none;">
+            <h1 style="text-align: center;">Options</h1>
             <label for="outline-color">Choose Outline Color<br></label>
-            <input id="outline-color" type="color" title="Choose Outline Color">
+            <input class="color-btn" id="outline-color" type="color" title="Choose Outline Color">
             <label for="digit-color"><br>Choose Digit Buttons Color<br></label>
-            <input id="digit-color" type="color" title="Choose Digit Buttons Color">
+            <input class="color-btn" id="digit-color" type="color" title="Choose Digit Buttons Color">
             <label for="symbol-color"><br>Choose Symbol Buttons Color<br></label>
-            <input id="symbol-color" type="color" title="Choose Symbol Buttons Color">
+            <input class="color-btn" id="symbol-color" type="color" title="Choose Symbol Buttons Color">
             <label for="mini-color"><br>Choose Mini Buttons Color<br></label>
-            <input id="mini-color" type="color" title="Choose Mini Buttons Color">
-            <br>
-            <button id="exit">Exit</button>
+            <input class="color-btn" id="mini-color" type="color" title="Choose Mini Buttons Color">
         </div>
         <script src="script.js"></script>
     </body>
