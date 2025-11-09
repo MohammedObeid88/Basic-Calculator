@@ -96,3 +96,7 @@
     transform: translate(75%, -200%);
     padding: 1rem;
 }
+
+.digit:hover, .symbol:hover, .mini:hover {
+    cursor: pointer;
+}
